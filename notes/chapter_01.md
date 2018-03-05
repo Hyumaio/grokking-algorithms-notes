@@ -1,4 +1,4 @@
-# Chapter 1
+# Chapter 01
 
 - To calculate binary search's operation time, use log2(N), then round the result up.
 - In Python 3, "//" will round the result down, and the result will be an integer if the dividend and the divisor are both integers. "/" always get a float result, "//" can also get a float when at least one of the dividend or the divisor is a float.
