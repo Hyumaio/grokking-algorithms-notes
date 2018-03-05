@@ -5,8 +5,9 @@ def binarySearch(lst, element):
     high_index = len(lst) - 1
 
     # While the given element hasn't been found yet.
-    times = 1
+    times = 0
     while low_index <= high_index:
+        times += 1
         mid_index = (low_index + high_index) // 2
         guess = lst[mid_index]
         if guess == element:
@@ -16,7 +17,6 @@ def binarySearch(lst, element):
         else:
             # guess < element
             low_index = mid_index + 1
-        times += 1
 
     # When element doesn't exist.
     return None, None
@@ -24,12 +24,12 @@ def binarySearch(lst, element):
 
 def search(lst, element):
     """Simple search."""
-    times = 1
+    times = 0
     for i in lst:
+        times += 1
         if i == element:
             element_index = lst.index(i)
             return element_index, times
-        times += 1
     return None, None
 
 
@@ -42,4 +42,4 @@ element_index, times = binarySearch(lst, element)
 if element_index is None:
     print('Cannot find %s in the given list.' % element)
 else:
-    print("Element(%s)'s index is %s, used %s times to get." % (element, element_index, times))
+    print("Element(%s)'s index is %s, used %s times to search out." % (element, element_index, times))
