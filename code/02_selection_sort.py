@@ -1,4 +1,4 @@
-def findSmallest(arr):
+def find_smallest(arr):
     """Find the smallest element in an array."""
     smallest = arr[0]
     smallest_index = 0
@@ -9,17 +9,17 @@ def findSmallest(arr):
     return smallest_index
 
 
-def selectionSort(arr):
+def selection_sort(arr):
     """Sort an array from smallest to largest."""
-    newArr = list()
+    new_arr = list()
     for i in range(len(arr)):
-        smallest_index = findSmallest(arr)
+        smallest_index = find_smallest(arr)
         # Get smallest by smallest_index, remove it from the old array, then append it to the new array.
-        newArr.append(arr.pop(smallest_index))
-    return newArr
+        new_arr.append(arr.pop(smallest_index))
+    return new_arr
 
 
 if __name__ == '__main__':
-    arr = [43, 21, 24, 35, 81, 4, 27, 78, 71, 46, 31, 9]
-    newArr = selectionSort(arr)
-    print('After selection sort, the new array is', newArr)
+    ARR = [43, 21, 24, 35, 81, 4, 27, 78, 71, 46, 31, 9]
+    NEW_ARR = selection_sort(ARR)
+    print('After selection sort, the new array is', NEW_ARR)

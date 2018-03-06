@@ -1,6 +1,5 @@
-def binarySearch(lst, element):
+def binary_search(lst, element):
     """Binary search."""
-    assert isinstance(lst, list), "'lst' must be a list object."
     low_index = 0
     high_index = len(lst) - 1
 
@@ -22,7 +21,7 @@ def binarySearch(lst, element):
     return None, None
 
 
-def search(lst, element):
+def simple_search(lst, element):
     """Simple search."""
     times = 0
     for i in lst:
@@ -34,13 +33,16 @@ def search(lst, element):
 
 
 if __name__ == '__main__':
-    element = 240000
-    lst = [x for x in range(1, 240000 + 1)]
+    ELEMENT = 240000
+    LST = [x for x in range(1, 240000 + 1)]
 
-    # element_index, times = search(lst, element)
-    element_index, times = binarySearch(lst, element)
+    # 1.Simple search
+    # ELEMENT_INDEX, TIMES = simple_search(LST, ELEMENT)
 
-    if element_index is None:
-        print('Cannot find %s in the given list.' % element)
+    # 2.Binary search
+    ELEMENT_INDEX, TIMES = binary_search(LST, ELEMENT)
+
+    if ELEMENT_INDEX is None:
+        print('Cannot find %s in the given list.' % ELEMENT)
     else:
-        print("Element(%s)'s index is %s, used %s times to search out." % (element, element_index, times))
+        print("Element(%s)'s index is %s, used %s times to search out." % (ELEMENT, ELEMENT_INDEX, TIMES))

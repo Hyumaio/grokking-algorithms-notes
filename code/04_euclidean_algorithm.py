@@ -3,7 +3,7 @@ Euclidean Algorithm, also called Euclid's Algorithm, is a algorithm to solve the
 """
 
 
-def euclideanAlgorithm(numbers):
+def euclidean_algorithm(numbers):
     foo, bar = numbers
     while True:
         remainder = foo % bar
@@ -14,9 +14,9 @@ def euclideanAlgorithm(numbers):
 
 
 if __name__ == '__main__':
-    numbers = (2000, 96)
-    gcd = euclideanAlgorithm(numbers)
-    print(gcd)
+    NUMBERS = (2000, 96)
+    GCD = euclidean_algorithm(NUMBERS)
+    print(GCD)
 
 # =========================================================================================
 # To get the GCD, there're two more solutions, I made a simple brief explanation down here.

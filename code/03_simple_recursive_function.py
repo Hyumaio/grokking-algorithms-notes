@@ -7,5 +7,5 @@ def factorial(number):
 
 
 if __name__ == '__main__':
-    result = factorial(5)
-    print(result)
+    RESULT = factorial(5)
+    print(RESULT)
