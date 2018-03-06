@@ -19,6 +19,7 @@ def selectionSort(arr):
     return newArr
 
 
-arr = [43, 21, 24, 35, 81, 4, 27, 78, 71, 46, 31, 9]
-newArr = selectionSort(arr)
-print('After selection sort, the new array is', newArr)
+if __name__ == '__main__':
+    arr = [43, 21, 24, 35, 81, 4, 27, 78, 71, 46, 31, 9]
+    newArr = selectionSort(arr)
+    print('After selection sort, the new array is', newArr)

@@ -33,13 +33,14 @@ def search(lst, element):
     return None, None
 
 
-element = 240000
-lst = [x for x in range(1, 240000 + 1)]
+if __name__ == '__main__':
+    element = 240000
+    lst = [x for x in range(1, 240000 + 1)]
 
-# element_index, times = search(lst, element)
-element_index, times = binarySearch(lst, element)
+    # element_index, times = search(lst, element)
+    element_index, times = binarySearch(lst, element)
 
-if element_index is None:
-    print('Cannot find %s in the given list.' % element)
-else:
-    print("Element(%s)'s index is %s, used %s times to search out." % (element, element_index, times))
+    if element_index is None:
+        print('Cannot find %s in the given list.' % element)
+    else:
+        print("Element(%s)'s index is %s, used %s times to search out." % (element, element_index, times))
