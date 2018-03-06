@@ -6,9 +6,8 @@ def sum_recursion(arr):
     if not arr:
         # The base case
         return 0
-    else:
-        # The recursive case
-        return arr.pop(0) + sum_recursion(arr)
+    # The recursive case
+    return arr.pop(0) + sum_recursion(arr)
 
 
 def sum_loop(arr):
