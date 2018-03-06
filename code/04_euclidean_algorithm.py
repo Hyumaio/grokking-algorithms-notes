@@ -1,5 +1,5 @@
 """
-Euclidean Algorithm, also called Euclid's Algorithm, is a algorithm to solve the GCD(Greatest Common Divisor)/HCF(Highest Common Factor) of two numbers.
+Euclidean Algorithm, also called Euclid's Algorithm, is a algorithm to solve the GCD(Greatest Common Divisor)/HCF(Highest Common Factor) of two positive integers.
 """
 
 
