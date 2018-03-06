@@ -3,13 +3,12 @@ import copy
 
 def sum_recursion(arr):
     """Use D&C to sum an array."""
-    while True:
-        if len(arr) == 1:
-            # The base case
-            return arr[0]
-        else:
-            # The recursive case
-            return arr.pop(0) + sum_recursion(arr)
+    if not arr:
+        # The base case
+        return 0
+    else:
+        # The recursive case
+        return arr.pop(0) + sum_recursion(arr)
 
 
 def sum_loop(arr):
